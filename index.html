@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-color-primary text-color-white tracking-wider">
+    <header class="sticky top-0 z-50">
+        <nav class="flex px-6 justify-between items-center ">
+            <div class="py-5 text-color-secondary font-bold text-3xl ">
+                <a href="index.html ">
+                    <span>Drashti</span>
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6 ">
+                    <li>
+                        <a href="#home " class="hover:text-color-secondary ease-in duration-200 ">Home</a>
+                    </li>
+                    <li id='drop-menu' class="flex">
+                        <div class="hover:text-color-secondary ease-in duration-200 ">Explore</div>
+                        <ul id="drop" style="display: none;" class="flex-col absolute top-20 h-40 bg-color-primary ">
+                            <li class="hover:bg-color-secondary px-5 py-3 ">
+                                <a href="#features">Degree Program</a>
+                            </li>
+                            <li class="hover:bg-color-secondary px-5 py-3 ">
+                                <a href="#certifications">Certification</a>
+                            </li>
+                            <li class="hover:bg-color-secondary px-5 py-3 ">
+                                <a href="#how-it-works">Courses</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200 ">Contact</a></li>
+                    <li>
+                        <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 ">Join for Free</button></li>
+                </ul>
+            </div>
+            <div id="hamburger" class="lg:hidden z-50 ">
+                <i class="fa-solid fa-bars "></i>
+            </div>
+
+        </nav>
+        <!-- mobile screen -->
+
+        <div id="menu" class="hidden absolute right-0">
+            <ul class="h-1/2 bg-color-primary gap-2 grid px-5 py-3 ">
+                <li>
+                    <a id="hlink" href="#home" class="hover:text-color-secondary ease-in duration-200 ">Home</a>
+                </li>
+                <li>
+                    <a id="hlink" href="#features" class="hover:text-color-secondary ease-in duration-200 ">Explore</a>
+                    <ul class="flex-col">
+                        <li class="hover:bg-color-secondary px-5 py-3 ">
+                            <a id="hlink" href="#features">Degree Program</a>
+                        </li>
+                        <li class="hover:bg-color-secondary px-5 py-3 ">
+                            <a id="hlink" href="#certifications">Certification</a>
+                        </li>
+                        <li class="hover:bg-color-secondary px-5 py-3 ">
+                            <a id="hlink" href="#how-it-works">Courses</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a id="hlink" href="#contact" class="hover:text-color-secondary ease-in duration-200 ">Contact</a>
+                </li>
+                <li>
+                    <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 ">Join for Free</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="relative ">
+            <div class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full "></div>
+            <div class="w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full "></div>
+            <div class="lg:container py-20">
+                <div class="flex lg:flex-row  md:px-5  items-center z-20 md:flex-col-reverse">
+                    <div class="text-center mb-12 md:text-left md:px-10 " data-aos="fade-right">
+                        <h1 class="text-4xl md:text-6xl font-semibold leading-snug mb-7 ">Learn without limits
+                        </h1>
+                        <p class="leading-relaxed text-base mb-10 ">Start, switch, or advance your career with more than 6,900 courses, Professional Certificates, and degrees from world-class universities and companies.</p>
+                        <!-- <div class="text-xl flex-wrap items-center flex gap-3 "> -->
+                        <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-semibold hover:opacity-80 ease-in duration-200 gap-3 sm:mb-3">Join for Free</button>
+                        <button class="border-color-secondary border-2 px-9 py-3 rounded-md capitalize font-semibold hover:opacity-80 ease-in duration-200 underline ">Try Courses</button>
+                        <!-- </div> -->
+
+                    </div>
+                    <div class="max-md:hidden lg:w-full" data-aos="fade-left">
+                        <img src="./images/im-1.png ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-color-primary-dark ">
+            <div class="py-5" data-aos="fade">
+                <div class="text-2xl text-center py-5 ">
+                    <h1>We Collaborate with <span class="text-color-secondary ">300+ leading universities and companies</span></h1>
+                </div>
+                <div class="container flex flex-wrap gap-10 md:gap-2 items-center justify-center ">
+                    <img src="/images/google.png " class="w-24 " />
+                    <img src="https://logos-download.com/wp-content/uploads/2019/06/University_of_Illinois_Logo_full-700x179.png " class="w-32 " />
+                    <img src="https://1.bp.blogspot.com/-HCP3OErCDgk/X2y6E07ZJXI/AAAAAAAAAZ8/4jFajhKXFbMKc-e2ZWjAeYPxHYWx8KT5ACLcBGAsYHQ/s2604/logo-ibm-yogiancretive.png " class="w-24 " />
+                    <img src="https://veruscorp.com/wp-content/uploads/2018/10/cisco-logo-transparent.png " class="w-24 " />
+                    <img src="https://download.logo.wine/logo/Stanford_University/Stanford_University-Logo.wine.png " class="w-40 " />
+                    <img src="https://cyclepharma.com/wp-content/uploads/2016/06/Logo_for_Imperial_College_London-web-1200x719.png " class="w-40 " />
+                    <img src="http://www.carlogos.org/logo/Tata-Group-logo-3840x2160.png " class="w-32 " />
+                </div>
+            </div>
+        </section>
+        <section id="features" class="bg-color-primary-light ">
+            <div class="container py-20 ">
+                <div class="text-left mb-20 md:w-1/2 " data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-color-secondary mb-4 ">Degree Programs</h3>
+                    <h1 class="text-3xl leading-snug ">Find a top degree that fits your life</h1>
+                </div>
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 ">
+                    <!-- card no1 -->
+                    <div class="border-2 border-solid border-color-gray p-3 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 w-auto" data-aos="fade-up">
+                        <div class=" inline-block ">
+                            <img src=" https://www.windsorgreatpark.co.uk/wp-content/uploads/2023/03/Royal-Holloway-University-front-of-building.-Masthead.jpg " class="rounded-lg  h-44 ">
+                        </div>
+                        <h3 class="test-xl py-2 opacity-45 "> Royal Holloway University of London
+                        </h3>
+                        <p class="leading-relaxed ">Bachelor of Science in Computer Sceince</p>
+                        <h4 class="opacity-30 py-3 ">Deegre</h4>
+                    </div>
+
+                    <!-- card no2 -->
+
+                    <div class="bg-color-primary-dark border-2 border-solid border-color-gray p-3 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 " data-aos="fade-up">
+                        <div class="inline-block ">
+                            <img src="https://media.glassdoor.com/l/6b/c0/fd/19/admin-and-library-building-iitg.jpg " class="rounded-lg  h-44 ">
+                        </div>
+                        <h3 class="test-xl py-2 opacity-45 ">Indian Institute of Technology Guwahati
+                        </h3>
+                        <p class="leading-relaxed ">Bachelor of Science in Data Sceince and AI</p>
+                        <h4 class="opacity-30 py-3 ">Deegre</h4>
+                    </div>
+
+                    <!-- card no3 -->
+
+                    <div class="border-2 border-solid border-color-gray p-3 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 " data-aos="fade-up">
+                        <div class="inline-block ">
+                            <img src="https://berkeleyhillel.org/wp-content/uploads/2020/08/berkeley.jpg " class="rounded-lg h-44 ">
+                        </div>
+                        <h3 class="test-xl py-2 opacity-45 ">University of California, Berkeley
+                        </h3>
+                        <p class="leading-relaxed "> Master of Advance Study in Engineering</p>
+                        <h4 class="opacity-30 py-3 ">Deegre</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="saving-money">
+
+            <div class="lg:container  py-20 relative">
+                <div class="w-80 h-80 bg-color-blob absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full "></div>
+                <div class="w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full "></div>
+                <div class="flex lg:flex-row flex-col justify-between md:items-center px-5">
+
+                    <div class="mb-12 md:w-4/5">
+                        <img src="https://th.bing.com/th/id/R.37d9c5e34d119e11770f4c744f47658c?rik=0dNF8W2%2bzwFsXg&riu=http%3a%2f%2fwww1.cv-ag.com%2fwp-content%2fuploads%2f2016%2f01%2fbusiness-people-working-together-istock_000017346252medium.jpg&ehk=VgK9hHrREyweK%2buDFv5XA0PyJZy3QvmVKowBA0p2Zlg%3d&risl=&pid=ImgRaw&r=0 "
+                            class="rounded-lg w-full " data-aos="fade-left">
+
+                    </div>
+                    <div class="items-center md:text-left md:ml-20 " data-aos="fade-right">
+                        <h1 class="font-bold text-2xl text-color-secondary mb-4 ">CAREER ACADEMY</h1>
+                        <h1 class="text-3xl md:text-4xl leading-snug mb-4 ">Prepare your students for in-demand jobs</h1>
+                        <p class="leading-relaxed mb-5 text-lg ">Strengthen student employability with skills training from the world's leading companies.</p>
+                        <p class="leading-relaxed mb-2 text-lg ">With Career Academy, enable your students to:</p>
+                        <ul class="pl-2 ">
+                            <li class="mb-1 "><i class="fa-solid fa-check mr-1 text-blue-400 text-base "></i>Earn a Professional Certificate designed to get them job-ready</li>
+                            <li class="mb-1 "><i class="fa-solid fa-check mr-1 text-blue-400 text-base "></i>Gain common job skills employers demand</li>
+                            <li class="mb-1 "><i class="fa-solid fa-check mr-1 text-blue-400 text-base "></i>Showcase skill mastery with a portfolio of work</li>
+                            <li class="mb-1 "><i class="fa-solid fa-check mr-1 text-blue-400 text-base "></i>Explore a range of in-demand roles across industries</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="how-it-works" class="bg-color-primary-light text-black ">
+            <div class="lg:container md:px-6 py-20 ">
+                <div class="text-center m-auto mb-20 md:w-1/2 " data-aos="fade-down">
+
+                    <h1 class="text-3xl md:text-4xl text-color-secondary font-bold leading-snug ">Explore Coursera</h1>
+                </div>
+                <div class="flex flex-row flex-wrap items-center justify-between px-5 gap-5 " data-aos="fade-down">
+
+                    <!-- card 1 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/9/5/0/950321c11d_50173256_data-science-1.jpg " class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Data Science
+                            </div>
+                            <div class="leading-relaxed opacity-55 text-sm ">425 courses</div>
+                        </div>
+
+                    </div>
+                    <!-- card 2 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.VG6bSmH4t7wPshpLdido_QHaEK?w=289&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 " class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Business
+                            </div>
+                            <div class="leading-relaxed opacity-85 text-sm ">1095 courses</div>
+                        </div>
+
+                    </div>
+                    <!-- card 3 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.IT0SEoQqAYwBXJNeMxgdfAHaEv?w=278&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 " class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Computer Science
+                            </div>
+                            <div class="leading-relaxed opacity-85 text-sm ">668 courses</div>
+                        </div>
+
+                    </div>
+                    <!-- card 4 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.tcPGnMSW1sBUf2SdHYXJcAHaEo?w=212&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 " class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Health
+                            </div>
+                            <div class="leading-relaxed opacity-85 text-sm ">471 courses</div>
+                        </div>
+
+                    </div>
+                    <!-- card 5 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.ed1mYDTXb2N7W68PvR5EWgHaE8?w=277&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7 " class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Social Science
+                            </div>
+                            <div class="leading-relaxed opacity-85 text-sm ">401 courses</div>
+                        </div>
+
+                    </div>
+                    <!-- card 6 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.cDYhArgraKgPqOQ6T6N9iQHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 " class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Personal Development
+                            </div>
+                            <div class="leading-relaxed opacity-85 text-sm ">137 courses</div>
+                        </div>
+
+                    </div>
+                    <!-- card 7 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full max-lg:w-5/12 items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="data:image/jpeg;base64,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 "
+                                class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Arts & Humanities
+                            </div>
+                            <div class="leading-relaxed opacity-85 text-sm ">337 courses</div>
+                        </div>
+
+                    </div>
+                    <!-- card 8 -->
+                    <div class="flex gap-x-4 w-2/5 max-sm:w-full max-lg:w-5/12 items-center cursor-pointer bg-gray-100 rounded-md shadow-lg shadow-slate-700 ">
+                        <div>
+                            <img src="https://th.bing.com/th/id/OIP.ma3CNNgEhwgrxOmCXbSg-wHaFb?w=268&h=197&c=7&r=0&o=5&dpr=1.3&pid=1.7 " class="rounded-s-md h-20 w-32 ">
+                        </div>
+                        <div class=" ">
+                            <div class="text-l font-bold ">Math and Logic
+                            </div>
+                            <div class="leading-relaxed opacity-85 text-sm ">67 courses</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section id="certifications" class="bg-color-primary">
+            <div class="container py-20 ">
+                <div class="text-left mb-20 md:w-1/2 " data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-color-secondary mb-4 ">Certifications</h3>
+                    <h1 class="text-3xl leading-snug ">Top Free Certification Courses</h1>
+                </div>
+
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-12 lg:gap-8 px-4 ">
+                    <!-- card no1 -->
+                    <div class="border-2 border-solid bg-slate-100 border-color-gray p-3 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200" data-aos="fade-up">
+                        <div class="flex text-center">
+                            <img src="https://th.bing.com/th/id/OIP.yrrU26mDdqa-l5IVOOddagAAAA?rs=1&pid=ImgDetMain " class="rounded-lg w-full  h-36 ">
+                        </div>
+                        <p class="leading-relaxed text-sm opacity-70">IBM
+                        </p>
+                        <h3 class="text-base py-2">Machine Learning with Pyhton
+                        </h3>
+                        <h4 class="opacity-70 py-3 text-sm">Intermediate Course 1-3 Months</h4>
+                    </div>
+
+                    <!-- card no2 -->
+
+                    <div class="bg-slate-100 border-2 border-solid border-color-gray p-3 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 " data-aos="fade-up">
+                        <div class="flex text-center">
+                            <img src="https://miro.medium.com/max/1024/1*YQgaKfVzK-YpxyT3NYqJAg.png " class="rounded-lg w-full h-36 ">
+                        </div>
+                        <p class="leading-relaxed text-sm opacity-70 ">Scrimba
+                        </p>
+                        <h3 class="text-base py-2 ">Learn JavaScript from Scratch for Beginners
+                        </h3>
+                        <h4 class="opacity-70 py-3 text-sm ">Beginner Course 1-4 Weeks </h4>
+                    </div>
+
+                    <!-- card no3 -->
+
+                    <div class="border-2 border-solid bg-slate-100 border-color-gray p-3 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 " data-aos="fade-up">
+                        <div class="flex text-center">
+                            <img src="https://the-tech-trend.com/wp-content/uploads/2021/07/New-Project-13-1024x507.jpg " class="rounded-lg w-full h-36 ">
+                        </div>
+                        <p class="leading-relaxed text-sm opacity-70 ">DeepLearning.AI
+                        </p>
+                        <h3 class="text-base py-2 ">Introduction to Artificial Intelligence(AI)
+                        </h3>
+                        <h4 class="opacity-70 py-3 text-sm ">Beginner Course 1-3 Months</h4>
+                    </div>
+
+                    <!-- card no4 -->
+                    <div class="border-2 border-solid bg-slate-100 border-color-gray p-3 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200 " data-aos="fade-up">
+                        <div class="flex text-center">
+                            <img src="https://th.bing.com/th/id/OIP.jIBBpARKMO1VRtJcBTrn3gHaEK?w=287&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7 " class="rounded-lg w-full h-36 ">
+                        </div>
+                        <p class="leading-relaxed text-sm opacity-70 ">Knowledge Accelerators
+
+                        </p>
+                        <h3 class="text-base py-2 "> Excel from Beginner to Advanced
+                        </h3>
+                        <h4 class="opacity-70 py-3 text-sm ">Beginner Course 1-3 Months</h4>
+                    </div>
+
+                </div>
+                <div class="mt-20 px-4 ">
+                    <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 ">Explore More</button>
+                </div>
+        </section>
+
+        <section id="contact" class="bg-color-primary-light " data-aos="zoom">
+            <div class="container py-20 ">
+                <div class="text-center m-auto mb-20 md:w-1/2 ">
+                    <h4 class="font-bold text-3xl text-color-secondary mb-4 ">Have a Question</h4>
+                    <h1 class="text-3xl md:text-4xl font-semibold leading-snug ">Get In Touch</h1>
+                </div>
+                <form>
+                    <div class="w-full m-auto text-centr md:w-2/3 ">
+                        <div class="text-color-primary-dark grid gap-6 mb-6 md:grid-cols-2 ">
+                            <input type="text " class="bg-gray-50 border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary " placeholder="Name ">
+                            <input type="text " class="bg-gray-50 border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary " placeholder="Email ">
+                            <input type="text " class="bg-gray-50 border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary " placeholder="Phone ">
+                            <input type="text " class="bg-gray-50 border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary " placeholder="Company ">
+                        </div>
+                        <textarea rows='4' class="text-color-primary-dark bg-gray-50 border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary " placeholder="Message ">
+                        </textarea>
+                        <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 mt-10 ">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="footer" data-aos="zoom">
+            <div class="bg-color-primary-dark relative ">
+                <div class="container py-10 ">
+                    <!-- <div class="grid gap-10 md:grid-cols-3 pb-10 "> -->
+
+                    <div class="flex flex-wrap gap-7 justify-between  pb-10">
+                        <div class="space-y-6 ">
+                            <h4 class="font-bold text-lg ">Quick Links</h4>
+                            <ul class="space-y-3 ">
+                                <li class="underline hover:no-underline hover:text-color-secondary ">
+                                    <a href="# ">Home</a>
+                                </li>
+                                <li class="underline hover:no-underline hover:text-color-secondary">
+                                    <a href="#features">Degree Program</a>
+                                </li>
+                                <li class="underline hover:no-underline hover:text-color-secondary">
+                                    <a href="#certifications">Certification</a>
+                                </li>
+                                <li class="underline hover:no-underline hover:text-color-secondary">
+                                    <a href="#how-it-works">Courses</a>
+                                </li>
+
+                                <li class="underline hover:no-underline hover:text-color-secondary ">
+                                    <a href="# ">Contact</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="space-y-6 ">
+                            <h4 class="font-bold text-lg ">Help</h4>
+                            <ul class="space-y-3 ">
+                                <li class="underline hover:no-underline hover:text-color-secondary ">
+                                    <a href="# ">About Us</a>
+                                </li>
+                                <li class="underline hover:no-underline hover:text-color-secondary ">
+                                    <a href="# ">Partners</a>
+                                </li>
+                                <li class="underline hover:no-underline hover:text-color-secondary ">
+                                    <a href="# ">Career</a>
+                                </li>
+                                <li class="underline hover:no-underline hover:text-color-secondary ">
+                                    <a href="# ">Terms & Conditions</a>
+                                </li>
+                                <li class="underline hover:no-underline hover:text-color-secondary ">
+                                    <a href="# ">Help</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="space-y-6 ">
+                            <h4 class="font-bold text-lg ">Newsletter</h4>
+                            <p class="leading-relaxed ">Subscribe with Email for News</p>
+                            <div class="flex items-center ">
+                                <input type="text " class="w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none " placeholder="Enter your Email ">
+                                <button type="submit " class="bg-color-secondary px-4 py-2 lg:py-3 lg:px-5 rounded-r-md hover:opacity-90 ">
+                                        <i class="fa-solid fa-chevron-right "></i>
+                                        </button>
+                            </div>
+                            <div class="flex-col gap-5 items-center ">
+                                <p>Follow Us</p>
+                                <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary "></i>
+                                <i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary "></i>
+                                <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary "></i>
+                                <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary "></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex justify-center pt-10 border-t border-color-gray ">
+                        <p>2024 &copy;All Rights reserved to Drashti</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js ">
+    </script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 700,
+        });
+    </script>
+    <script>
+        const drop = document.querySelector("#drop ");
+        const dropMenu = document.querySelector('#drop-menu');
+        dropMenu.addEventListener('mouseover', () => {
+            drop.style.display = 'block';
+        });
+        dropMenu.addEventListener('click', () => {
+            drop.style.display = 'block';
+        });
+
+        window.addEventListener('click', () => {
+                drop.style.display = 'none';
+            })
+            // dropMenu.addEventListener('mouseout', () => {
+            //     drop.style.display = 'none';
+            // });
+
+
+
+        const navbar = document.querySelector('header');
+        const features = document.querySelector('#features');
+
+        window.onscroll = () => {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('bg-color-navbar');
+                    // navbar.classList.add('border-b');
+                    // navbar.classList.add('border-color-gray');
+                } else {
+                    // navbar.classList.remove('border-color-gray');
+                    navbar.classList.remove('bg-color-navbar');
+                    // navbar.classList.remove('border-b');
+                }
+
+
+            }
+            //mobile menu
+        const ham = document.querySelector("#hamburger")
+        const menu = document.querySelector("#menu")
+        const hlink = document.querySelectorAll("#hlink")
+        const faBars = document.querySelector(".fa-solid");
+        ham.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            faBars.classList.toggle('fa-xmark')
+
+        })
+
+        hlink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faBars.classList.toggle('fa-xmark')
+
+            })
+
+        });
+        // testimonial
+        // const userTexts = document.getElementsByClassName('user-text');
+        // const userPics = document.getElementsByClassName('user-pic');
+
+        // function showReview() {
+        //     for (userPic of userPics) {
+        //         userPic.classList.remove('active-pic')
+        //     }
+        //     for (userText of userTexts) {
+        //         userText.classList.remove('active-text')
+        //     }
+        //     let i = Array.from(userPics).indexOf(event.target);
+        //     userPics[i].classList.add('active-pic');
+        //     userTexts[i].classList.add('active-text');
+
+        // }
+    </script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
